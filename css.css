@@ -1,0 +1,41 @@
+* {
+  box-sizing:border-box;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  max-width:1024px;
+  margin:0 auto;
+}
+
+#icon {
+  width:100px;
+}
+
+main > section:nth-child(1){
+  background: url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+h1.banner {
+  padding: 70px 0 0 0;
+  max-width:1024px;
+  margin:0 auto; 
+  color: white;
+}
+
+p.banner {
+  padding: 0 0 70px 0;
+  max-width:1024px;
+  margin:0 auto; 
+  color: white;
+}
+
+main > section:nth-child(2){
+  max-width: 1024px;
+  padding: 30px 0;
+  margin:0 auto;
+}
+
