@@ -7,30 +7,33 @@ header {
   justify-content:space-between;
   max-width:1024px;
   margin:0 auto;
+  background: white;
 }
 
 #icon {
   width:100px;
 }
 
-main > section:nth-child(1){
-  background: url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
+main > section >div >div>h1{
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+  max-width:1024px;
+  color:white;
+} 
+
+main > section >div >div>p{
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+  max-width:1024px;
+  color:white;
+} 
+
+div.bannerbackground{
+  background:  url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
   background-size:cover;
   background-repeat: no-repeat;
-}
-
-h1.banner {
-  padding: 70px 0 0 0;
-  max-width:1024px;
-  margin:0 auto; 
-  color: white;
-}
-
-p.banner {
-  padding: 0 0 70px 0;
-  max-width:1024px;
-  margin:0 auto; 
-  color: white;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 main > section:nth-child(2){
@@ -39,3 +42,64 @@ main > section:nth-child(2){
   margin:0 auto;
 }
 
+main > section:nth-child(2) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main > section:nth-child(2) > div > div > img {
+  border-radius: 15px;
+  width: 160px;
+}
+
+main > section:nth-child(2) > div > div > div:nth-child(2) {
+  color: white;
+  font-size: 17px;
+} 
+
+main > section:nth-child(2) > div > div > div:nth-child(3) {
+  color: white;
+  font-size: 12px;
+} 
+
+main > section:nth-child(2) > div > div {
+  position: relative;
+}
+
+main > section:nth-child(2) > div > div > div:nth-child(2) {
+  position: absolute;
+  top: 170px;
+  left: 10px;
+}
+
+main > section:nth-child(2) > div > div > div:nth-child(3) {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+}
+
+footer {
+  max-width: 1024px;
+  padding: 30px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: grey;
+}
+
+footer > div:nth-child(2) {
+  position: absolute;
+  right: 0;
+}
+
+img.footericon {
+  width: 17px;
+  height: 17px;
+  margin: 5px;
+}
+
+a:link {
+  text-decoration: none; 
+}
