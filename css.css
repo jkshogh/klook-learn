@@ -1,39 +1,46 @@
 * {
   box-sizing:border-box;
+  margin:0;
 }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  max-width:1024px;
-  margin:0 auto;
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
   background: white;
 }
 
-#icon {
+/*cannot use the class in a href? inline and block issue?*/
+
+img.headerleft {
   width:100px;
 }
 
-main > section >div >div>h1{
-  padding: 50px 0 0 0;
-  margin: 0 auto;
-  max-width:1024px;
-  color:white;
-} 
+.button {
+  background-color: #ff5b00;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  color: white;
+}
 
-main > section >div >div>p{
-  padding: 0 0 50px 0;
-  margin: 0 auto;
-  max-width:1024px;
-  color:white;
-} 
 
 div.bannerbackground{
   background:  url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
   background-size:cover;
   background-repeat: no-repeat;
-  padding: 50px 0;
+  padding: 100px 0;
   margin: 0 auto;
+}
+
+.banner {
+  margin: 0 auto;
+  max-width:1024px;
+  color:white;
 }
 
 main > section:nth-child(2){
@@ -56,6 +63,7 @@ main > section:nth-child(2) > div > div > img {
 main > section:nth-child(2) > div > div > div:nth-child(2) {
   color: white;
   font-size: 17px;
+/*   text-shadow: 2px 2px black; */
 } 
 
 main > section:nth-child(2) > div > div > div:nth-child(3) {
@@ -85,14 +93,14 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  position: relative;
+/*   position: relative; */
   color: grey;
 }
 
-footer > div:nth-child(2) {
+/* footer > div:nth-child(2) {
   position: absolute;
   right: 0;
-}
+} */
 
 img.footericon {
   width: 17px;

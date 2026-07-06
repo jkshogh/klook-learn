@@ -2,42 +2,49 @@
 <html>
 <head>
   <style>
+
 * {
   box-sizing:border-box;
+  margin:0;
 }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  max-width:1024px;
-  margin:0 auto;
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
   background: white;
 }
 
-#icon {
+/*cannot use the class in a href? inline and block issue?*/
+
+img.headerleft {
   width:100px;
 }
 
-main > section >div >div>h1{
-  padding: 50px 0 0 0;
-  margin: 0 auto;
-  max-width:1024px;
-  color:white;
-} 
-
-main > section >div >div>p{
-  padding: 0 0 50px 0;
-  margin: 0 auto;
-  max-width:1024px;
-  color:white;
-} 
+.button {
+  background-color: #ff5b00;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  color: white;
+}
 
 div.bannerbackground{
   background:  url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
   background-size:cover;
   background-repeat: no-repeat;
-  padding: 50px 0;
+  padding: 100px 0;
   margin: 0 auto;
+}
+
+.banner {
+  margin: 0 auto;
+  max-width:1024px;
+  color:white;
 }
 
 main > section:nth-child(2){
@@ -60,6 +67,7 @@ main > section:nth-child(2) > div > div > img {
 main > section:nth-child(2) > div > div > div:nth-child(2) {
   color: white;
   font-size: 17px;
+/*   text-shadow: 2px 2px black; */
 } 
 
 main > section:nth-child(2) > div > div > div:nth-child(3) {
@@ -89,14 +97,14 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  position: relative;
+/*   position: relative; */
   color: grey;
 }
 
-footer > div:nth-child(2) {
+/* footer > div:nth-child(2) {
   position: absolute;
   right: 0;
-}
+} */
 
 img.footericon {
   width: 17px;
@@ -109,19 +117,20 @@ a:link {
 }
 
 
-
   </style>
 </head>
 
 <body>
 <header>
-  
-  <a href="https://www.klook.com/en-HK">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBGHaFCMvCJgMvRh6gFKO5mWTiq38lfZJcOdYZK-LFQ&s=10" alt="logo" id="icon"/>
-  </a>
-  <nav>  
-    <a href="https://www.klook.com/en-HK/signin/?spm=Home.TopNavigation.Login&clickId=9130dc1bf6">Log in</a>
-  </nav>
+  <div>
+    <a href="https://www.klook.com/en-HK">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBGHaFCMvCJgMvRh6gFKO5mWTiq38lfZJcOdYZK-LFQ&s=10" alt="logo" class="headerleft"/>
+    </a>
+    <nav>  
+      <a href="https://www.klook.com/en-HK/signin/?spm=Home.TopNavigation.Login&clickId=9130dc1bf6" class="headerright">
+        <button class="button">log in</button></a>
+    </nav>
+  </div>
 </header>
   
 <main>
@@ -135,34 +144,34 @@ a:link {
   </section>
 
   <section>
-    <h3>想去邊度玩？</h3>
+    <h3 class="subheader">想去邊度玩？</h3>
     <div>
-      <div>
+      <div class="hk">
         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/gnrtvywb0orrw4ydv6aj.webp" alt="hkpic"/>
         <div>香港</div>
         <div>519個活動</div>
       </div>
-      <div>
+      <div class="mc">
         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/f69glrnha1iwrih3qn0e.webp" alt="mcpic"/>
         <div>澳門</div>
         <div>39個活動</div>
       </div>
-      <div>
+      <div class="tyo">
         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/krkibxtj4ccjzwca3ibl.webp" alt="tyopic"/>
         <div>東京</div>
         <div>1045個活動</div>
       </div>
-      <div>
+      <div class="sgp">
         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/m0bkgexumkfbitol1mnu.webp" alt="sgpic"/>
         <div>新加坡</div>
         <div>671個活動</div>
       </div>
-      <div>
+      <div class="osk">
         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755071490/destination/wl98bhg6ujhk26mit9av.webp" alt="oskpic"/>
         <div>大阪</div>
         <div>338個活動</div>
       </div>
-      <div>
+      <div class="bs">
          <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755345964/destination/amrbtvy4msoknkrj0tu8.webp" alt="bspic"/>
         <div>釜山</div>
         <div>210個活動</div>
@@ -172,9 +181,9 @@ a:link {
 </main>
 
 <footer>
-    <div>© 2014-2026 Klook. All Rights Reserved. 旅行代理商牌照: 354005</div>
-    <div>
-      <a href="https://www.facebook.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=ec25163497"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Meta.webp" alt="facebook" class="footericon">
+    <div class="footerleft">© 2014-2026 Klook. All Rights Reserved. 旅行代理商牌照: 354005</div>
+    <div class="footerright">
+      <a href="https://www.facebook.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=ec25163497"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Meta.webp" alt="facebook" class="footericon"></a>
       <a href="https://www.youtube.com/@klookhk8644/?spm=Home.FooterSociaMediaLink&clickId=638f4ed680" ><img  src="https://res.klook.com/image/upload/v1747821955/ued/Other/social%20media/Youtube1.webp" alt="youtube" class="footericon">
       <a href="https://www.instagram.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=dcecc9d8d1"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Instagram.webp" alt="instagram" class="footericon">
       <a href="https://www.threads.net/@klookhk?spm=Home.FooterSociaMediaLink&clickId=d121a51813"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Threads.webp" alt="threads" class="footericon">
