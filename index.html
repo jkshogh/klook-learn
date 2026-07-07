@@ -59,36 +59,29 @@ main > section:nth-child(2) > div {
   flex-wrap: wrap;
 }
 
-main > section:nth-child(2) > div > div > img {
-  border-radius: 15px;
-  width: 160px;
-}
-
-main > section:nth-child(2) > div > div > div:nth-child(2) {
-  color: white;
-  font-size: 17px;
-/*   text-shadow: 2px 2px black; */
-} 
-
-main > section:nth-child(2) > div > div > div:nth-child(3) {
-  color: white;
-  font-size: 12px;
-} 
-
 main > section:nth-child(2) > div > div {
   position: relative;
 }
 
-main > section:nth-child(2) > div > div > div:nth-child(2) {
+.locimg {
+  border-radius: 15px;
+  width: 160px;  
+}
+
+.loc {
+  color: white;
+  font-size: 17px;
   position: absolute;
   top: 170px;
   left: 10px;
 }
 
-main > section:nth-child(2) > div > div > div:nth-child(3) {
+.noact {
+  color: white;
+  font-size: 12px;
   position: absolute;
   top: 190px;
-  left: 10px;
+  left: 10px;  
 }
 
 footer {
@@ -97,14 +90,11 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-/*   position: relative; */
-  color: grey;
 }
 
-/* footer > div:nth-child(2) {
-  position: absolute;
-  right: 0;
-} */
+.footerleft {
+  color: grey;
+}
 
 img.footericon {
   width: 17px;
@@ -115,6 +105,7 @@ img.footericon {
 a:link {
   text-decoration: none; 
 }
+
 
 
   </style>
@@ -147,34 +138,34 @@ a:link {
     <h3 class="subheader">想去邊度玩？</h3>
     <div>
       <div class="hk">
-        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/gnrtvywb0orrw4ydv6aj.webp" alt="hkpic"/>
-        <div>香港</div>
-        <div>519個活動</div>
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/gnrtvywb0orrw4ydv6aj.webp" alt="hkpic" class="locimg"/>
+        <div class="loc">香港</div>
+        <div class="noact">519個活動</div>
       </div>
       <div class="mc">
-        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/f69glrnha1iwrih3qn0e.webp" alt="mcpic"/>
-        <div>澳門</div>
-        <div>39個活動</div>
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/f69glrnha1iwrih3qn0e.webp" alt="mcpic" class="locimg"/>
+        <div class="loc">澳門</div>
+        <div class="noact">39個活動</div>
       </div>
       <div class="tyo">
-        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/krkibxtj4ccjzwca3ibl.webp" alt="tyopic"/>
-        <div>東京</div>
-        <div>1045個活動</div>
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/krkibxtj4ccjzwca3ibl.webp" alt="tyopic" class="locimg"/>
+        <div class="loc">東京</div>
+        <div class="noact">1045個活動</div>
       </div>
       <div class="sgp">
-        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/m0bkgexumkfbitol1mnu.webp" alt="sgpic"/>
-        <div>新加坡</div>
-        <div>671個活動</div>
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/m0bkgexumkfbitol1mnu.webp" alt="sgpic" class="locimg"/>
+        <div class="loc">新加坡</div>
+        <div class="noact">671個活動</div>
       </div>
       <div class="osk">
-        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755071490/destination/wl98bhg6ujhk26mit9av.webp" alt="oskpic"/>
-        <div>大阪</div>
-        <div>338個活動</div>
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755071490/destination/wl98bhg6ujhk26mit9av.webp" alt="oskpic" class="locimg"/>
+        <div class="loc">大阪</div>
+        <div class="noact">338個活動</div>
       </div>
       <div class="bs">
-         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755345964/destination/amrbtvy4msoknkrj0tu8.webp" alt="bspic"/>
-        <div>釜山</div>
-        <div>210個活動</div>
+         <img src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755345964/destination/amrbtvy4msoknkrj0tu8.webp" alt="bspic" class="locimg"/>
+        <div class="loc">釜山</div>
+        <div class="noact">210個活動</div>
       </div>
     </div>
   </section>
@@ -183,9 +174,10 @@ a:link {
 <footer>
     <div class="footerleft">© 2014-2026 Klook. All Rights Reserved. 旅行代理商牌照: 354005</div>
     <div class="footerright">
-      <a href="https://www.facebook.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=ec25163497"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Meta.webp" alt="facebook" class="footericon"></a>
-      <a href="https://www.youtube.com/@klookhk8644/?spm=Home.FooterSociaMediaLink&clickId=638f4ed680" ><img  src="https://res.klook.com/image/upload/v1747821955/ued/Other/social%20media/Youtube1.webp" alt="youtube" class="footericon">
-      <a href="https://www.instagram.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=dcecc9d8d1"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Instagram.webp" alt="instagram" class="footericon">
-      <a href="https://www.threads.net/@klookhk?spm=Home.FooterSociaMediaLink&clickId=d121a51813"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Threads.webp" alt="threads" class="footericon">
+      <a href="https://www.facebook.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=ec25163497"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Meta.webp" alt="facebook" class="footericon"/></a>
+      <a href="https://www.youtube.com/@klookhk8644/?spm=Home.FooterSociaMediaLink&clickId=638f4ed680"><img  src="https://res.klook.com/image/upload/v1747821955/ued/Other/social%20media/Youtube1.webp" alt="youtube" class="footericon"/></a>
+      <a href="https://www.instagram.com/klookhk/?spm=Home.FooterSociaMediaLink&clickId=dcecc9d8d1"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Instagram.webp" alt="instagram" class="footericon"/></a>
+      <a href="https://www.threads.net/@klookhk?spm=Home.FooterSociaMediaLink&clickId=d121a51813"><img src="https://res.klook.com/image/upload/v1744785757/ued/Other/social%20media/Threads.webp" alt="threads" class="footericon"/></a>
     </div>
 </footer>
+

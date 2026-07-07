@@ -28,7 +28,6 @@ img.headerleft {
   color: white;
 }
 
-
 div.bannerbackground{
   background:  url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
   background-size:cover;
@@ -55,36 +54,29 @@ main > section:nth-child(2) > div {
   flex-wrap: wrap;
 }
 
-main > section:nth-child(2) > div > div > img {
-  border-radius: 15px;
-  width: 160px;
-}
-
-main > section:nth-child(2) > div > div > div:nth-child(2) {
-  color: white;
-  font-size: 17px;
-/*   text-shadow: 2px 2px black; */
-} 
-
-main > section:nth-child(2) > div > div > div:nth-child(3) {
-  color: white;
-  font-size: 12px;
-} 
-
 main > section:nth-child(2) > div > div {
   position: relative;
 }
 
-main > section:nth-child(2) > div > div > div:nth-child(2) {
+.locimg {
+  border-radius: 15px;
+  width: 160px;  
+}
+
+.loc {
+  color: white;
+  font-size: 17px;
   position: absolute;
   top: 170px;
   left: 10px;
 }
 
-main > section:nth-child(2) > div > div > div:nth-child(3) {
+.noact {
+  color: white;
+  font-size: 12px;
   position: absolute;
   top: 190px;
-  left: 10px;
+  left: 10px;  
 }
 
 footer {
@@ -93,14 +85,11 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-/*   position: relative; */
-  color: grey;
 }
 
-/* footer > div:nth-child(2) {
-  position: absolute;
-  right: 0;
-} */
+.footerleft {
+  color: grey;
+}
 
 img.footericon {
   width: 17px;
