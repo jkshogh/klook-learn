@@ -1,136 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        font-family:
-          -apple-system,
-          BlinkMacSystemFont,
-          Segoe UI,
-          Roboto,
-          Droid Sans,
-          Helvetica Neue,
-          Helvetica,
-          Arial,
-          sans-serif;
-      }
-
-      header > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 0 10px;
-        background: white;
-      }
-
-      /*cannot use the class in a href? inline and block issue?*/
-
-      img.headerleft {
-        width: 100px;
-      }
-
-      .button {
-        background-color: #ff5b00;
-        border: none;
-        padding: 10px 10px;
-        cursor: pointer;
-        border-radius: 30px;
-        color: white;
-      }
-
-      div.bannerbackground {
-        background: url("https://res.klook.com/image/upload/fl_lossy.progressive,q_90/c_fill,,w_2560,/v1770693523/banner/t0pvkw6asjkoijkzmixd.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 100px 0;
-        margin: 0 auto;
-      }
-
-      .banner {
-        margin: 0 auto;
-        max-width: 1024px;
-        color: white;
-      }
-
-      h1 {
-        font-size: 4rem;
-      }
-
-      main > section:nth-child(2) {
-        max-width: 1024px;
-        padding: 30px 0;
-        margin: 0 auto;
-      }
-
-      .subheader {
-        font-size: 1.8rem;
-        line-height: 1.5;
-        margin-bottom: 16px;
-        color: rgb(33, 33, 33);
-      }
-
-      main > section:nth-child(2) > div {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      main > section:nth-child(2) > div > div {
-        position: relative;
-      }
-
-      .locimg {
-        border-radius: 15px;
-        width: 160px;
-      }
-
-      .loc {
-        color: white;
-        font-size: 17px;
-        position: absolute;
-        top: 170px;
-        left: 10px;
-      }
-
-      .noact {
-        color: white;
-        font-size: 12px;
-        position: absolute;
-        top: 190px;
-        left: 10px;
-      }
-
-      footer {
-        border-top: 1px solid #e5e5e5;
-      }
-
-      footer > div {
-        max-width: 1024px;
-        padding: 30px 0;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .footerleft {
-        color: grey;
-        font-size: 0.8rem;
-      }
-
-      img.footericon {
-        width: 17px;
-        height: 17px;
-        margin: 5px;
-      }
-
-      a:link {
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css.css">
   </head>
 
   <body>
@@ -158,7 +29,7 @@
       <section>
         <div class="bannerbackground">
           <div>
-            <h1 class="banner">探索你的玩樂世界</h1>
+            <h1 class="banner" style="color: blue;">探索你的玩樂世界</h1>
             <p class="banner">
               無論係海外旅遊或本地玩樂體驗，隨時隨地為你提供玩樂靈感！一齊出發放試玩！
             </p>
