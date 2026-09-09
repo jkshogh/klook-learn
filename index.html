@@ -96,6 +96,16 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="FAQ">
+          <h1 id="FAQTitle">預訂後要多久才會收到活動憑證？</h1>
+          <button id="questionsButton" onclick="showAnswer()">+</button>
+        </div>
+        <div>
+          <p id="questionAnswer1">這取決於您的活動政策。</p>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -135,5 +145,35 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let answer = "off";
+      
+      const showAnswer = () => {
+        if (answer === "off") {
+          answer = "on";
+          setAnswer(answer);
+        } else {
+          answer = "off";
+          setAnswer(answer);
+        }
+      }
+
+      const setAnswer = (answer) => {
+        if (answer === "off") {
+          document.getElementById('questionsButton').innerHTML = `+`;
+          document.getElementById("questionAnswer1").classList.remove("on");
+          document.getElementById("questionAnswer1").classList.add("off");
+        } else {
+          document.getElementById("questionAnswer1").classList.remove("off");
+          document.getElementById('questionsButton').innerHTML = `-`;
+          document.getElementById("questionAnswer1").classList.add("on");
+        }
+      }
+
+      setAnswer(answer);
+
+    </script>
+
   </body>
 </html>

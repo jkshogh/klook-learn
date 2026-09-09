@@ -126,3 +126,40 @@ img.footericon {
 a:link {
   text-decoration: none;
 }
+
+.FAQ {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#FAQTitle {
+  font-size: 30px;
+}
+
+#questionsButton {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#questionAnswer1 {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.off {
+    display: none;
+  }
+
+.on {
+    display: flex;
+}
+
+
