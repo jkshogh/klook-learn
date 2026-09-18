@@ -39,61 +39,7 @@
 
       <section>
         <h3 class="subheader">想去邊度玩？</h3>
-        <div>
-          <div class="hk">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/gnrtvywb0orrw4ydv6aj.webp"
-              alt="hkpic"
-              class="locimg"
-            />
-            <div class="loc">香港</div>
-            <div class="noact">519個活動</div>
-          </div>
-          <div class="mc">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/f69glrnha1iwrih3qn0e.webp"
-              alt="mcpic"
-              class="locimg"
-            />
-            <div class="loc">澳門</div>
-            <div class="noact">39個活動</div>
-          </div>
-          <div class="tyo">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/krkibxtj4ccjzwca3ibl.webp"
-              alt="tyopic"
-              class="locimg"
-            />
-            <div class="loc">東京</div>
-            <div class="noact">1045個活動</div>
-          </div>
-          <div class="sgp">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/cities/m0bkgexumkfbitol1mnu.webp"
-              alt="sgpic"
-              class="locimg"
-            />
-            <div class="loc">新加坡</div>
-            <div class="noact">671個活動</div>
-          </div>
-          <div class="osk">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755071490/destination/wl98bhg6ujhk26mit9av.webp"
-              alt="oskpic"
-              class="locimg"
-            />
-            <div class="loc">大阪</div>
-            <div class="noact">338個活動</div>
-          </div>
-          <div class="bs">
-            <img
-              src="https://res.klook.com/image/upload/fl_lossy.progressive,w_530,h_707,c_fill,q_85/v1755345964/destination/amrbtvy4msoknkrj0tu8.webp"
-              alt="bspic"
-              class="locimg"
-            />
-            <div class="loc">釜山</div>
-            <div class="noact">210個活動</div>
-          </div>
+        <div id="activities">
         </div>
       </section>
 
@@ -112,6 +58,8 @@
           <button id="minus" onclick="calMinus()">-</button>
           <div id="number">0</div>
           <button id="add" onclick="calAdd()">+</button>
+        </div>
+        <div id="newLineSection">
         </div>
       </section>
 
@@ -157,6 +105,8 @@
     </footer>
 
     <script>
+
+      // Add feature FAQ section
       let answer = "off";
       
       const showAnswer = () => {
@@ -183,6 +133,7 @@
 
       setAnswer(answer);
 
+      //Add feature cal
       let result = 0;
 
       const calMinus = () => {
@@ -193,13 +144,20 @@
       const calAdd = () => {
           result = result + 1;
           setresult(result);
+          const newLine = document.createElement('p')
+          newLine.textContent = 'New Line';
+          document.querySelector('#newLineSection').appendChild(newLine);
       }
 
+
       const setresult = (result) => {
-        document.getElementById('number').innerHTML = `<div> ${result} </div>`;
+        document.querySelector('#number').innerHTML = `<div> ${result} </div>`;
       }
 
     </script>
+
+    <script src='app.js' type="text/javascript"></script>
+
 
   </body>
 </html>

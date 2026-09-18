@@ -82,6 +82,8 @@ main > section:nth-child(2) > div > div {
 .locimg {
   border-radius: 15px;
   width: 160px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .loc {
